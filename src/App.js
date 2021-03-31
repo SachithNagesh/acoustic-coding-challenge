@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Article from './components/Article/Article'
+import Header from './layout/Header'
+import Footer from './layout/Footer'
+
+const API_URL = `${process.env.REACT_APP_BASE_URI}/api/${process.env.REACT_APP_CONTENT_HUB_ID}/delivery/v1/content/${process.env.REACT_APP_CONTENT_ID}`;
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Article url={API_URL} />
+      <Footer/>
     </div>
-  );
+  )
+
 }
 
 export default App;
