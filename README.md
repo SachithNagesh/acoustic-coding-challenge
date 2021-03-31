@@ -1,8 +1,8 @@
 # About the Application
 
-This is a coding assessment for Acoustic. \
+This is a coding assessment for Acoustic.
 
-The application fetches existing content from Acoustic's Content Hub and renders elements belonging to the content. \
+The application fetches existing content from Acoustic's Content Hub and renders elements belonging to the content.
 
 Built using: React.js and TailwindCSS
 
